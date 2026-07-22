@@ -1,0 +1,101 @@
+═══════════════════════════════════════════════════════════════════════════
+  🚀 DESPLEGAR PORTAL LUME EN RAILWAY
+═══════════════════════════════════════════════════════════════════════════
+
+✅ TODO LISTO - Script creado
+
+═══════════════════════════════════════════════════════════════════════════
+  📍 DONDE ESTAS AHORA
+═══════════════════════════════════════════════════════════════════════════
+
+Se abrió la carpeta del proyecto en el Explorador de Windows:
+
+  C:\LUME\Horarios\Prototipos\PIN + VACACIONES\Portal React
+
+═══════════════════════════════════════════════════════════════════════════
+  🎯 QUE HACER AHORA (MUY SIMPLE)
+═══════════════════════════════════════════════════════════════════════════
+
+1. Busca en la carpeta el archivo: DEPLOY_NOW.bat
+
+2. Doble click en: DEPLOY_NOW.bat
+
+3. Sigue las instrucciones que aparezcan en la ventana
+
+¡ESO ES TODO!
+
+═══════════════════════════════════════════════════════════════════════════
+  🔧 QUE HARA EL SCRIPT
+═══════════════════════════════════════════════════════════════════════════
+
+✓ Verificará Node.js
+✓ Instalará Railway CLI si no existe
+✓ Pedirá login en Railway (una sola vez)
+✓ Subirá código a GitHub
+✓ Desplegará en Railway automáticamente
+
+Tiempo total: 3-5 minutos
+
+═══════════════════════════════════════════════════════════════════════════
+  ❓ SI PIDE LOGIN DE RAILWAY
+═══════════════════════════════════════════════════════════════════════════
+
+1. Se abrirá el navegador automáticamente
+2. Click en "Login with GitHub"
+3. Autoriza Railway
+4. Vuelve a la ventana del script
+5. Presiona Enter
+
+Solo lo harás UNA VEZ. Railway recordará tu sesión.
+
+═══════════════════════════════════════════════════════════════════════════
+  ❓ SI PREGUNTA POR PROYECTO
+═══════════════════════════════════════════════════════════════════════════
+
+Opciones:
+  → Si ves "lume-portal-react" en la lista: Selecciónalo
+  → Si no: Selecciona "Create new project"
+
+Usa flechas ↑↓ y Enter
+
+═══════════════════════════════════════════════════════════════════════════
+  ✅ CUANDO TERMINE
+═══════════════════════════════════════════════════════════════════════════
+
+Verás:
+  ========================================================
+    DEPLOY EXITOSO
+  ========================================================
+
+Siguiente paso:
+  1. Ve a: https://railway.app
+  2. Entra a tu proyecto
+  3. Settings → Domains → Generate Domain
+  4. Copia la URL
+
+¡Tu portal estará en línea!
+
+═══════════════════════════════════════════════════════════════════════════
+  📂 ARCHIVOS DISPONIBLES
+═══════════════════════════════════════════════════════════════════════════
+
+DEPLOY_NOW.bat          ⭐ EJECUTA ESTE (Recomendado)
+DEPLOY_AUTO.bat         ⭐ Alternativa más verbosa
+1_LOGIN_RAILWAY.bat     → Solo login
+2_DEPLOY_RAILWAY.bat    → Solo deploy
+DEPLOY_RAPIDO.bat       → Para actualizaciones futuras
+
+═══════════════════════════════════════════════════════════════════════════
+  🎉 RESUMEN
+═══════════════════════════════════════════════════════════════════════════
+
+1. Doble click en: DEPLOY_NOW.bat
+2. Sigue instrucciones
+3. Espera 3-5 minutos
+4. ¡Portal desplegado!
+
+═══════════════════════════════════════════════════════════════════════════
+
+¡Adelante! Ejecuta DEPLOY_NOW.bat 🚀
+
+═══════════════════════════════════════════════════════════════════════════
