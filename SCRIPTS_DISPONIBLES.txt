@@ -1,0 +1,164 @@
+═══════════════════════════════════════════════════════════════════════════
+  📜 SCRIPTS DE DEPLOYMENT DISPONIBLES
+═══════════════════════════════════════════════════════════════════════════
+
+Tienes 4 scripts .bat para facilitar el deployment:
+
+═══════════════════════════════════════════════════════════════════════════
+  🔐 1_LOGIN_RAILWAY.bat
+═══════════════════════════════════════════════════════════════════════════
+
+**Ejecutar primero (solo una vez)**
+
+Qué hace:
+  - Abre el navegador
+  - Te pide que inicies sesión en Railway con GitHub
+  - Autoriza Railway para acceder a tus repositorios
+  - Guarda la sesión
+
+⏱️ Tiempo: 1-2 minutos
+🎯 Resultado: Sesión iniciada en Railway CLI
+
+═══════════════════════════════════════════════════════════════════════════
+  🚀 2_DEPLOY_RAILWAY.bat
+═══════════════════════════════════════════════════════════════════════════
+
+**Ejecutar después del login**
+
+Qué hace:
+  - Verifica que hayas iniciado sesión
+  - Inicializa el proyecto en Railway
+  - Despliega el Portal LUMÉ
+  - Ejecuta build automáticamente
+
+⏱️ Tiempo: 3-5 minutos
+🎯 Resultado: Portal desplegado en Railway
+
+═══════════════════════════════════════════════════════════════════════════
+  ⚡ DEPLOY_RAPIDO.bat
+═══════════════════════════════════════════════════════════════════════════
+
+**Para actualizaciones futuras**
+
+Qué hace:
+  - Hace commit de cambios
+  - Push a GitHub
+  - Railway auto-despliega
+
+⏱️ Tiempo: 1 minuto
+🎯 Resultado: Cambios desplegados automáticamente
+
+═══════════════════════════════════════════════════════════════════════════
+  🔧 DESPLEGAR_EN_RAILWAY.bat
+═══════════════════════════════════════════════════════════════════════════
+
+**Script completo todo-en-uno**
+
+Qué hace:
+  - Verifica Node.js
+  - Instala Railway CLI si no existe
+  - Hace login
+  - Configura proyecto
+  - Despliega
+
+⏱️ Tiempo: 5-7 minutos
+🎯 Resultado: Todo automatizado
+
+═══════════════════════════════════════════════════════════════════════════
+  📋 CÓMO USAR (Primera vez)
+═══════════════════════════════════════════════════════════════════════════
+
+OPCIÓN A: Paso a paso (Recomendado)
+────────────────────────────────────
+
+1. Doble click en: 1_LOGIN_RAILWAY.bat
+   → Inicia sesión con GitHub en el navegador
+   → Vuelve a la ventana cuando termine
+
+2. Doble click en: 2_DEPLOY_RAILWAY.bat
+   → Selecciona "Create new project" cuando pregunte
+   → Espera 2-3 minutos
+   → ¡Listo!
+
+OPCIÓN B: Todo automático
+──────────────────────────
+
+1. Doble click en: DESPLEGAR_EN_RAILWAY.bat
+   → Hace todo automáticamente
+   → Solo sigue las instrucciones
+
+═══════════════════════════════════════════════════════════════════════════
+  🔄 ACTUALIZACIONES FUTURAS
+═══════════════════════════════════════════════════════════════════════════
+
+Después del primer deploy, para actualizar:
+
+1. Haz cambios en el código
+2. Doble click en: DEPLOY_RAPIDO.bat
+3. ¡Listo! Railway despliega automáticamente
+
+O simplemente:
+  git add .
+  git commit -m "Cambios"
+  git push origin main
+
+Railway detecta el push y despliega automáticamente.
+
+═══════════════════════════════════════════════════════════════════════════
+  ✅ ESTADO ACTUAL
+═══════════════════════════════════════════════════════════════════════════
+
+Scripts creados:          ✅
+Código en GitHub:         ✅ (Crisalinas/lume-portal-react)
+Build verificado:         ✅
+Backup creado:            ✅✅ (Doble backup)
+Railway CLI instalado:    ✅
+
+Pending:
+  [ ] Login en Railway     → Ejecuta: 1_LOGIN_RAILWAY.bat
+  [ ] Deploy en Railway    → Ejecuta: 2_DEPLOY_RAILWAY.bat
+
+═══════════════════════════════════════════════════════════════════════════
+  🎯 SIGUIENTE PASO
+═══════════════════════════════════════════════════════════════════════════
+
+AHORA MISMO:
+
+1. Si se abrió una ventana de "Railway Login":
+   → Sigue las instrucciones
+   → Inicia sesión con GitHub
+   → Vuelve aquí
+
+2. Si NO se abrió:
+   → Doble click en: 1_LOGIN_RAILWAY.bat
+
+3. Después del login exitoso:
+   → Doble click en: 2_DEPLOY_RAILWAY.bat
+
+═══════════════════════════════════════════════════════════════════════════
+  💡 TIPS
+═══════════════════════════════════════════════════════════════════════════
+
+✓ Los scripts .bat se ejecutan con doble click
+✓ Sigue las instrucciones en cada ventana
+✓ No cierres las ventanas hasta que terminen
+✓ Si hay error, lee el mensaje - suele decir qué hacer
+✓ Railway CLI recuerda tu sesión (no necesitas login cada vez)
+
+═══════════════════════════════════════════════════════════════════════════
+  🆘 SI ALGO FALLA
+═══════════════════════════════════════════════════════════════════════════
+
+1. Verifica que tengas internet
+2. Verifica que Node.js esté instalado (node --version)
+3. Lee el mensaje de error en la ventana
+4. Consulta: DEPLOYMENT_MANUAL.md (troubleshooting)
+5. Usa el plan de rollback si es necesario: PLAN_ROLLBACK.md
+
+═══════════════════════════════════════════════════════════════════════════
+
+¡Todo listo para desplegar! 🚀
+
+Doble click en: 1_LOGIN_RAILWAY.bat
+
+═══════════════════════════════════════════════════════════════════════════
