@@ -1,0 +1,175 @@
+═══════════════════════════════════════════════════════════════════════════
+  🚂 RAILWAY DEPLOYMENT - GUÍA PASO A PASO
+═══════════════════════════════════════════════════════════════════════════
+
+⏱️ TIEMPO TOTAL: 5-7 MINUTOS
+
+═══════════════════════════════════════════════════════════════════════════
+  PASO 1: ABRIR RAILWAY (30 segundos)
+═══════════════════════════════════════════════════════════════════════════
+
+1. Abrir navegador
+2. Ir a: https://railway.app
+3. Click en "Login" (o "Start a New Project" si no tienes cuenta)
+4. Seleccionar "Continue with GitHub"
+
+✅ Completado cuando: Estés en el Railway Dashboard
+
+═══════════════════════════════════════════════════════════════════════════
+  PASO 2: CREAR PROYECTO (1 minuto)
+═══════════════════════════════════════════════════════════════════════════
+
+1. Click en "New Project" (botón morado arriba derecha)
+2. Seleccionar "Deploy from GitHub repo"
+3. Si es primera vez:
+   → Click "Configure GitHub App"
+   → Permitir acceso a repositorios
+   → Volver a Railway
+
+✅ Completado cuando: Veas la lista de repositorios
+
+═══════════════════════════════════════════════════════════════════════════
+  PASO 3: SELECCIONAR REPOSITORIO (30 segundos)
+═══════════════════════════════════════════════════════════════════════════
+
+1. En la búsqueda escribir: "lume-portal-react"
+2. Click en: "Crisalinas/lume-portal-react"
+3. Verificar que diga:
+   Branch: main ✓
+   Repository: lume-portal-react ✓
+
+✅ Completado cuando: Railway muestre "Ready to deploy"
+
+═══════════════════════════════════════════════════════════════════════════
+  PASO 4: DEPLOY (2-3 minutos)
+═══════════════════════════════════════════════════════════════════════════
+
+1. Click en "Deploy" o "Add variables and Deploy"
+   (No necesitas agregar variables)
+
+2. Railway comenzará automáticamente:
+   
+   [00:00] 🚀 Deployment started
+   [00:05] 📦 Cloning repository...
+   [00:10] 📥 npm install
+   [00:30] 🔨 npm run build
+           ✓ 2179 modules transformed
+   [01:20] 🚢 npm start
+           ✓ serving on port 3000
+   [01:30] ✅ Success!
+
+3. Esperar a que aparezca: "Deployment successful" ✅
+
+✅ Completado cuando: Estado = "Success" (verde)
+
+═══════════════════════════════════════════════════════════════════════════
+  PASO 5: GENERAR DOMINIO (1 minuto)
+═══════════════════════════════════════════════════════════════════════════
+
+1. Click en "Settings" (⚙️ en menú lateral izquierdo)
+2. Scroll hasta sección "Domains"
+3. Click en "Generate Domain"
+4. Railway generará algo como:
+   
+   https://lume-portal-react-production.up.railway.app
+
+5. Click en el ícono de copiar 📋 al lado de la URL
+
+✅ Completado cuando: Tengas la URL copiada
+
+═══════════════════════════════════════════════════════════════════════════
+  PASO 6: VERIFICAR (1 minuto)
+═══════════════════════════════════════════════════════════════════════════
+
+1. Pegar la URL en una nueva pestaña del navegador
+2. Esperar a que cargue (puede tardar 5-10 segundos la primera vez)
+
+3. Verificar:
+   ✓ Aparece splash screen "LUMÉ"
+   ✓ Portal se carga con 6 módulos
+   ✓ Al hacer hover hay animaciones
+   ✓ Reloj muestra hora actual
+   ✓ Botones Día/Noche funcionan
+
+4. Abrir DevTools (F12) y verificar:
+   ✓ Console: Sin errores rojos
+   ✓ Network: Todos los recursos cargados
+
+✅ Completado cuando: Todo funciona correctamente
+
+═══════════════════════════════════════════════════════════════════════════
+  🎉 ¡DEPLOYMENT COMPLETADO!
+═══════════════════════════════════════════════════════════════════════════
+
+Tu portal LUMÉ está en línea en:
+https://[tu-proyecto].up.railway.app
+
+Características activas:
+✅ Splash screen animado
+✅ 6 módulos del sistema
+✅ Animaciones dock suaves
+✅ Tema día/noche
+✅ Reloj en tiempo real
+✅ Diseño responsive
+✅ Auto-deploy configurado
+
+═══════════════════════════════════════════════════════════════════════════
+  📊 QUÉ HACER AHORA
+═══════════════════════════════════════════════════════════════════════════
+
+1. Guardar la URL en un lugar seguro
+2. Compartir con tu equipo
+3. Probar en diferentes dispositivos (mobile, tablet, desktop)
+4. Verificar en diferentes navegadores (Chrome, Firefox, Safari)
+
+═══════════════════════════════════════════════════════════════════════════
+  🔄 ACTUALIZAR EL PORTAL (Futuro)
+═══════════════════════════════════════════════════════════════════════════
+
+Para hacer cambios en el futuro:
+
+1. Editar código localmente
+2. Commit y push:
+   
+   git add .
+   git commit -m "Actualización"
+   git push origin main
+
+3. Railway desplegará automáticamente en 2-3 minutos
+4. Refrescar la URL para ver cambios
+
+═══════════════════════════════════════════════════════════════════════════
+  🐛 SI ALGO SALE MAL
+═══════════════════════════════════════════════════════════════════════════
+
+1. Ver logs en Railway Dashboard → Deployments
+2. Consultar: DEPLOYMENT_MANUAL.md (troubleshooting detallado)
+3. Hacer rollback: PLAN_ROLLBACK.md (3 opciones)
+
+═══════════════════════════════════════════════════════════════════════════
+  📋 CHECKLIST FINAL
+═══════════════════════════════════════════════════════════════════════════
+
+Deployment:
+[✓] Railway login
+[✓] Proyecto creado
+[✓] Repositorio conectado
+[✓] Build exitoso
+[✓] Deploy exitoso
+[✓] Dominio generado
+[✓] Portal verificado
+
+Post-Deployment:
+[ ] URL guardada
+[ ] Probado en mobile
+[ ] Probado en diferentes navegadores
+[ ] Equipo notificado
+[ ] Documentación revisada
+
+═══════════════════════════════════════════════════════════════════════════
+
+¡Ahora sí, ve a Railway y despliega! 🚀
+
+👉 https://railway.app
+
+═══════════════════════════════════════════════════════════════════════════
